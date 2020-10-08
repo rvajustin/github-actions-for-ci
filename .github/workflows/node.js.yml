@@ -11,7 +11,7 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: webpack artifacts
-          path: public/
+    needs: build
     
     steps:
       - uses: actions/checkout@v2
